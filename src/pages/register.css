@@ -1,0 +1,148 @@
+.register-text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 250px;
+}
+
+
+
+.register-text h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.register-text form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+
+}
+
+.register-text input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-text input[type="submit"] {
+    width: auto;
+    background-color: #4286f4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-text input[type="submit"]:hover {
+    background-color: #336ac3;
+}
+
+.register-text input::placeholder {
+    color: #999;
+}
+
+.register-text input:focus {
+    outline: none;
+    border-color: #4286f4;
+    box-shadow: 0 0 5px #4286f4;
+}
+
+.register-text .submit {
+    margin-top: 20px;
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #00b7ff;
+}
+
+.register-text .submit:hover {
+    background-color: rgb(0, 132, 255);
+    transition: all ease 0.3s;
+    color: #ffffff;
+}
+
+.register-text .verify {
+    /* margin-top: 20px; */
+
+    height: 40px;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    color: #ffffff;
+    background-color: #056e0a;
+    width: 300px;
+}
+
+.register-text .verify:hover {
+    background-color: rgb(7, 70, 17);
+    transition: all ease 0.3s;
+    color: #ffffff;
+}
+
+.register-text h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Georgia';
+    font-size: 30px;
+    /* color: #383a2c; */
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+    padding: 0;
+    letter-spacing: .5px;
+    color: #0d2366;
+
+}
+
+.register h3:hover {
+    text-decoration: underline;
+    text-shadow: 5px 10px 30px rgba(0, 247, 255, 0.157);
+    color: #00b7ff;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 820px) {
+    .register-text {
+        margin-right: 0;
+        align-items: center;
+
+        padding: 50px 5% 0px 5%;
+        position: relative;
+        justify-content: space-evenly
+    }
+}
+
+@media (max-width: 768) {
+    .register-text {
+        margin-right: 0;
+        align-items: center;
+        /* justify-content: space-between; */
+        padding: 50px 5% 0px 5%;
+        position: relative;
+        justify-content: space-evenly
+    }
+}
+
+@media (max-width: 1100) {
+    .about-image {
+        width: 0%;
+    }
+
+    #register {
+        margin-top: 50px;
+    }
+}

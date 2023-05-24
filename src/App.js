@@ -1,28 +1,30 @@
 import React from 'react';
-import Header from './Components/Header.jsx';
+import {
+  BrowserRouter as Router,
+  NavLink,
+  Route,
+  Routes,
+} from 'react-router-dom';
+
 import Feature from './Components/Features.jsx';
 import About from './Components/About.jsx';
 import Presentation from './Components/Presentation.jsx';
-import aboutImage from './assets/Images/Frame 19.png';
-import aboutImage1 from './assets/Images/download.png';
 import './index.css';
+import Home from './Components/Home.jsx';
+import Register from './pages/Register.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <h3 id="feature">
-        <u> Features</u>
-      </h3>
-      <h6>Six reasons why you should choose Haazir over other options</h6>
-      <Feature />
-      <About
-        image={aboutImage1}
-        title="Haazir - Virtyally Everywhere..!"
-        button="Get The App"
-      />
-      <Presentation />
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/presentation" element={<Presentation />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

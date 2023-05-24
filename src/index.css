@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,800;1,500;1,700&display=swap');
 
+
+
+
 body {
     margin: 0px;
     padding: 0px;
@@ -103,6 +106,7 @@ nav .menu-btn,
     display: none;
 }
 
+
 .name {
     font-family: 'Montserrat';
     width: 500px;
@@ -112,31 +116,62 @@ nav .menu-btn,
     transform: translate(-22%, -50%);
 }
 
-.name span {
-    color: #0e3cd4fd;
+.name h2 {
+    font-size: 28px;
+    color: #383a2c;
+    opacity: 0;
+    /* Hide the h2 initially */
+    transform: translateY(-50px);
+    /* Initial position of h2 */
+    animation: slide-in 1s forwards;
+
 }
 
-.name .details {
-    color: #383a2c;
-    font-size: 18px;
+.name h2 span {
+    font-size: 50px;
+    color: #db148f;
+
+
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Transition h2 to final position */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Maintain final position */
+    }
 }
 
 .name h1 {
-    font-family: 'Montserrat';
-    font-size: 40px;
-    margin: 0px;
-    letter-spacing: 2px;
-    color: #6366ec;
-
-
+    font-size: 42px;
+    color: #000;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    animation-delay: 1s;
 }
 
-.name h2 {
-    font-family: 'Georgia';
-    font-size: 60px;
-    margin: 0px;
-    letter-spacing: 2px;
-    color: #e22828;
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        /* Transition h1 to full scale */
+    }
 }
 
 .header-btns {
@@ -144,16 +179,30 @@ nav .menu-btn,
     margin-top: 40px;
 }
 
+.name .details {
+    font-size: 18px;
+    color: #555;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    animation-delay: 2s;
+
+}
+
 .cv-btn {
-    width: 170px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 20px;
     background-color: #00b7ff;
-    box-shadow: 5px 10px 30px rgba(2, 238, 255, 0.336);
-    border-radius: 10px;
     color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 30px rgba(2, 238, 255, 0.336);
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    animation-delay: 3s;
+
 }
 
 .cv-btn:hover {
@@ -161,6 +210,14 @@ nav .menu-btn,
     transition: all ease 0.5s;
     color: #ffffff;
 }
+
+
+
+
+
+
+
+
 
 .f-heading h1 {
     color: #ffffff;
@@ -182,10 +239,24 @@ nav .menu-btn,
     margin-bottom: -80px;
 }
 
+
 #about {
     /* margin-top: 100px; */
     width: 100%;
     height: 120vh;
+    background-color: #f3fdff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+}
+
+#register {
+    /* margin-top: 100px; */
+    width: 100%;
+
     background-color: #f3fdff;
     box-sizing: border-box;
     display: flex;
@@ -203,7 +274,7 @@ nav .menu-btn,
 
 .about-text h2 {
     font-size: 2rem;
-color: #00b7ff;
+    color: #00b7ff;
     font-weight: 500;
     margin: 0px;
     letter-spacing: .5px;
@@ -237,6 +308,7 @@ color: #00b7ff;
 
 
 
+
 .about-text p {
     width: 100%;
     font-size: 1.2rem;
@@ -261,7 +333,7 @@ color: #00b7ff;
 }
 
 .about-image {
-    width: 50%;
+    width: 40%;
 }
 
 .about-image img {
@@ -311,6 +383,20 @@ h6:hover {
     color: #00b7ff;
     cursor: pointer;
 }
+
+#feature {
+
+    /* height: 100vh; */
+    box-sizing: border-box;
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    background-color: #ffffff;
+}
+
 
 #features {
     width: 100%;

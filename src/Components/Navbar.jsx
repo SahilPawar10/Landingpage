@@ -26,18 +26,21 @@ function Navbar() {
       </label>
       <ul className="menu">
         <li>
-          <a href="/" className="active">
-            Home
-          </a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <Link to="feature">About</Link>
+          <Link to="about">About</Link>
         </li>
         <li>
-          <Link to="about">Feature</Link>
+          <Link to="feature">Feature</Link>
         </li>
         <li>
           <Link to="presentaion">Demo</Link>
+        </li>
+        <li>
+          <Link to="presentaion" className="active">
+            Login
+          </Link>
         </li>
       </ul>
     </nav>
