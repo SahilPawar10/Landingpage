@@ -3,9 +3,14 @@ import aboutImage from '../assets/Images/Frame 19.png';
 import Navbar from '../Components/Navbar';
 import './register.css';
 
+import Header from '../Components/Header';
+import About from '../Components/About';
+import Features from '../Components/Features';
+import aboutImage1 from '../assets/Images/download.png';
+
 function Register() {
   return (
-    <div>
+    <div id="App">
       <Navbar />
       <div id="register">
         <div className="about-image">
@@ -35,6 +40,14 @@ function Register() {
           </form>
         </div>
       </div>
+      <About
+        image={aboutImage1}
+        title="Haazir - Virtually Everywhere..!"
+        button="Get The App"
+      />
+      <h3 id="feature"></h3>
+      <h6>Six reasons why you should choose Haazir over other options</h6>
+      <Features />
     </div>
   );
 }
